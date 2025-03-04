@@ -34,7 +34,7 @@ This project guides you through building a lightweight gaming-focused OS similar
 
 ### 1. Base System Setup  
 #### Debian/Ubuntu  
-```bash
+
 # Install minimal base  
 sudo apt update && sudo apt install --no-install-recommends debootstrap
 sudo debootstrap --variant=minbase focal /mnt/mysteamos http://archive.ubuntu.com/ubuntu
