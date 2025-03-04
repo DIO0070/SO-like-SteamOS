@@ -1,21 +1,40 @@
-# SO-like-SteamOS
+# Project Name: MySteamOS-Lite  
+**Build a SteamOS-like Gaming OS from Scratch**  
 
-# Project GamerOS 🎮
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Platform: Linux](https://img.shields.io/badge/Platform-Linux-blue)](https://www.kernel.org/)
+[![Alternatives: ChimeraOS](https://img.shields.io/badge/Alternative-ChimeraOS-green)](https://chimeraos.org)
 
-Un sistema operativo basado en Linux para gaming, enfocado en integración con Steam y optimización de rendimiento.
+---
 
-![Screenshot](https://via.placeholder.com/800x400.png?text=GamerOS+Interface) 
-*Captura de pantalla simulada*
+## 📖 Overview  
+This project guides you through building a lightweight gaming-focused OS similar to **SteamOS**, optimized for performance and designed to boot directly into Steam's Big Picture Mode. Perfect for DIY enthusiasts and gaming-centric setups.  
 
-[![GitHub forks](https://img.shields.io/github/forks/tuusuario/gameros)](https://github.com/tuusuario/gameros/network)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+---
 
-## 🌟 Características
-- Autoarranque en Steam Big Picture Mode
-- Optimizado para Vulkan y Proton
-- Soporte para mandos (Xbox, PlayStation, Steam Controller)
-- Kernel de baja latencia
-- Sistema base: Arch Linux / Debian
+## ✨ Features  
+- Auto-launch Steam in Big Picture Mode.  
+- Optimized kernel for low-latency gaming.  
+- Full Vulkan/Proton support.  
+- Preconfigured drivers for AMD/NVIDIA GPUs and controllers.  
+- Recovery tools and update management.  
 
-## 🚀 Instalación Rápida
-Descarga la ISO preconstruida desde [Releases](https://github.com/tuusuario/gameros/releases) y flashea a USB:
+---
+
+## 🛠️ Getting Started  
+
+### Prerequisites  
+- A Linux base (Debian/Ubuntu/Arch recommended).  
+- Minimum 50 GB disk space.  
+- Familiarity with Linux terminal.  
+
+---
+
+## 🚀 Building Your OS  
+
+### 1. Base System Setup  
+#### Debian/Ubuntu  
+```bash
+# Install minimal base  
+sudo apt update && sudo apt install --no-install-recommends debootstrap
+sudo debootstrap --variant=minbase focal /mnt/mysteamos http://archive.ubuntu.com/ubuntu
