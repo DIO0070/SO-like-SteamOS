@@ -38,3 +38,25 @@ This project guides you through building a lightweight gaming-focused OS similar
 # Install minimal base  
 sudo apt update && sudo apt install --no-install-recommends debootstrap
 sudo debootstrap --variant=minbase focal /mnt/mysteamos http://archive.ubuntu.com/ubuntu
+
+Arch Linux
+
+# Use archiso to build a live environment  
+git clone https://github.com/archlinux/archiso
+cd archiso && sudo make install
+
+# Install Steam  
+sudo apt install steam # Debian/Ubuntu  
+sudo pacman -S steam # Arch  
+
+2. Steam Integration
+
+# Autostart Steam on boot  
+mkdir -p ~/.config/autostart  
+cat <<EOF > ~/.config/autostart/steam.desktop  
+[Desktop Entry]  
+Type=Application  
+Name=Steam  
+Exec=steam -bigpicture  
+EOF
+
