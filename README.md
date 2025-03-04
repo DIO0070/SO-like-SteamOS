@@ -120,13 +120,59 @@ Copy
 
 sudo mkarchiso -v archiso-profile/
 
-🌟 Alternatives
+Aquí tienes los enlaces oficiales de descarga para las alternativas mencionadas:
 
-If you prefer a prebuilt solution:
+---
 
-    ChimeraOS: SteamOS-like OS with automatic updates.
+### 🌟 **Alternativas Preconstruidas**  
+Si prefieres no construir desde cero, estas son las opciones más populares:
 
-    HoloISO: Community SteamOS 3.0 clone.
+#### 1. **ChimeraOS**  
+- **Descripción**: Sistema operativo enfocado en gaming, similar a SteamOS, con actualizaciones automáticas y soporte para Steam/Proton.  
+- **ISO Oficial**:  
+  [https://chimeraos.org/download/](https://chimeraos.org/download/)  
+- **Notas**:  
+  - Soporta mandos y GPU AMD/NVIDIA.  
+  - Ideal para PCs de salón.  
+
+---
+
+#### 2. **HoloISO**  
+- **Descripción**: Clon no oficial de SteamOS 3.0 (basado en Arch Linux), diseñado para PCs genéricos.  
+- **ISO Oficial**:  
+  [https://github.com/theVakhovskeIsTaken/holoiso/releases](https://github.com/theVakhovskeIsTaken/holoiso/releases)  
+- **Notas**:  
+  - Comunidad activa, pero puede tener bugs en hardware específico.  
+  - Requiere UEFI y GPU compatible con Vulkan.  
+
+---
+
+#### 3. **SteamOS (Oficial de Valve)**  
+- **Descripción**: La versión oficial usada en Steam Deck, pero adaptada para instalación en PCs.  
+- **Recovery Image (ISO)**:  
+  [https://store.steampowered.com/steamos/download/?ver=steamdeck](https://store.steampowered.com/steamos/download/?ver=steamdeck)  
+- **Notas**:  
+  - Más limitada en hardware no certificado (ej: NVIDIA).  
+  - Enfocada en Steam Deck, pero funciona en algunos PCs.  
+
+---
+
+#### 4. **Batocera.linux** (Alternativa Retro + Gaming)  
+- **Descripción**: Sistema para gaming retro y moderno, con soporte para Steam/Proton.  
+- **ISO Oficial**:  
+  [https://batocera.org/download](https://batocera.org/download)  
+- **Notas**:  
+  - Ideal para máquinas arcade o emulación.  
+  - Incluye Kodi y herramientas de gestión.  
+
+---
+
+### 📌 **Advertencias**  
+- **Compatibilidad**: Verifica que tu hardware (GPU, Wi-Fi, etc.) esté soportado antes de instalar.  
+- **Backups**: Siempre haz copias de seguridad de tus datos.  
+- **Comunidad**: Usa los foros de cada proyecto para soporte técnico (ej: [HoloISO Discussions](https://github.com/theVakhovskeIsTaken/holoiso/discussions)).  
+
+¡Espero que te sirva! 😊
 
 🚨 Challenges
 
