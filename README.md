@@ -49,7 +49,7 @@ cd archiso && sudo make install
 sudo apt install steam # Debian/Ubuntu  
 sudo pacman -S steam # Arch  
 
-2. Steam Integration
+### 2. Steam Integration
 
 # Autostart Steam on boot  
 mkdir -p ~/.config/autostart  
@@ -83,7 +83,7 @@ Copy
 sudo apt install steam-devices xboxdrv # Debian/Ubuntu  
 sudo pacman -S steam-devices xboxdrv # Arch  
 
-4. Gaming Enhancements
+### 4. Gaming Enhancements
 
     Install Proton & Tools:
 
@@ -103,7 +103,7 @@ sudo pacman -S steam-devices xboxdrv # Arch
 
     sudo apt install linux-xanmod
 
-5. Create a Distributable ISO
+### 5. Create a Distributable ISO
 Debian/Ubuntu
 bash
 Copy
