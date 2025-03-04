@@ -22,3 +22,10 @@ Descarga la ISO preconstruida desde [Releases](https://github.com/tuusuario/game
 ```bash
 sudo dd if=gameros.iso of=/dev/sdX bs=4M status=progress
 
+## 2. Instalar Steam y Dependencias
+
+# Debian/Ubuntu
+sudo apt install steam mesa-vulkan-drivers lib32-mesa-vulkan-drivers
+
+# Arch Linux
+sudo pacman -S steam vulkan-icd-loader lib32-vulkan-icd-loader
