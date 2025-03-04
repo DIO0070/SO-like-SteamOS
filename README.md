@@ -60,3 +60,60 @@ Name=Steam
 Exec=steam -bigpicture  
 EOF
 
+3. Hardware Optimization
+GPU Drivers
+
+    AMD:
+    bash
+    Copy
+
+    sudo apt install mesa-vulkan-drivers lib32-mesa-vulkan-drivers
+
+    NVIDIA:
+    bash
+    Copy
+
+    sudo ubuntu-drivers autoinstall # Ubuntu  
+    sudo pacman -S nvidia nvidia-utils # Arch  
+
+Controller Support
+bash
+Copy
+
+sudo apt install steam-devices xboxdrv # Debian/Ubuntu  
+sudo pacman -S steam-devices xboxdrv # Arch  
+
+4. Gaming Enhancements
+
+    Install Proton & Tools:
+
+        Enable Proton in Steam:
+        Steam > Settings > Steam Play > Enable for all titles.
+
+        Lutris for non-Steam games:
+        bash
+        Copy
+
+        sudo apt install lutris wine-staging # Debian/Ubuntu  
+        sudo pacman -S lutris wine-staging # Arch  
+
+    Low-Latency Kernel (Debian/Ubuntu):
+    bash
+    Copy
+
+    sudo apt install linux-xanmod
+
+5. Create a Distributable ISO
+Debian/Ubuntu
+bash
+Copy
+
+sudo apt install genisoimage  
+sudo genisoimage -o MySteamOS.iso -r -J /mnt/mysteamos  
+
+Arch Linux
+bash
+Copy
+
+# Use archiso to generate the ISO  
+sudo mkarchiso -v archiso-profile/
